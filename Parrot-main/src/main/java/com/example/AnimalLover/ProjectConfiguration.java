@@ -1,4 +1,4 @@
-package com.example.person;
+package com.example.AnimalLover;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -22,18 +22,11 @@ public class ProjectConfiguration {
 
   // Because there are >1 Parrot type beans, use Qualifier to specify which one
   @Bean
-  public Person person(@Qualifier("parrot1") Parrot parrot) {    
-    Person p = new Person();
-    p.setName("Ella");
+  public ParrotLover person(@Qualifier("parrot1") Parrot parrot) {    
+    ParrotLover p = new ParrotLover();
+    p.setName("Peter");
     p.setParrot(parrot);
     return p;
   }
   
-  @Bean
-  public Person person2(Parrot parrot1) {    
-    Person p = new Person();
-    p.setName("Ella");
-    p.setParrot(parrot1);
-    return p;
-  }
 }

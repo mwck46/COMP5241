@@ -1,6 +1,9 @@
-package com.example.person;
+package com.example.AnimalLover;
 
-public class Parrot {
+import org.springframework.stereotype.Component;
+
+@Component
+public class Dog implements IPet{
  
   private String name;
  
