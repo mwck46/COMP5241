@@ -1,4 +1,5 @@
 package com.example.person;
+
 public class Person {
   private String name;
   private Parrot parrot;
